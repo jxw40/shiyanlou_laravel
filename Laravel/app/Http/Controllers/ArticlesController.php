@@ -115,7 +115,7 @@ class ArticlesController extends Controller
         //
         $article = Article::findOrFail($id);
         $article->delete();
-        //return back();
-        return redirect()->route('articles.index');
+        return back();
+        //return redirect()->route('articles.index');
     }
 }
